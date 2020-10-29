@@ -1,4 +1,4 @@
-# ftt-gram-tica-SVG-X3D-html-
+# ftt-grammar-SVG/X3D(html)
 
 
 This challenge consists of creating a parser to read a txt file with a grammar (defined by the student), to process the production rules and as output, generate an SVG or X3D file with a corresponding graphic.
