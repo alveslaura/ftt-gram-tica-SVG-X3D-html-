@@ -30,8 +30,8 @@ function setup() {
   stroke(0, 0, 0, 255);
 
   // start the x and y position at lower-left corner
-  x = width / 2;
-  y = height - height / 2;
+  x = width / 3;
+  y = height - height / 4;
 
   // COMPUTE THE L-SYSTEM
   for (let i = 0; i < generations; i++) {
@@ -61,21 +61,21 @@ function draw() {
 
 function drawTree(outputstring) {
   resetMatrix();
-  translate(width / 2, height);
+  translate(width /3, height);
 
   for (let letter of outputstring) {
     if (letter == 'F') {
       line(0, 0, 0, -step);
-      let r = random(8, 5);
-      let g = random(0, 7);
-      let b = random(0, 0);
-      let a = random(0, 0);
+      let r = random(198, 200);
+      let g = random(50, 217);
+      let b = random(0, 50);
+      let a = random(50, 100);
 
       // pick a gaussian (D&D) distribution for the radius:
       let radius = 0;
-      radius += random(198, 200);
-      radius += random(50, 217);
-      radius += random(0, 50);
+      radius += random(0, 8);
+      radius += random(0, 8);
+      radius += random(0, 8);
       radius = radius / 3;
 
       // draw the stuff:
